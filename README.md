@@ -25,6 +25,7 @@ My approach was to model each component of the Electrical Power Subsystem (EPS) 
 * **Battery:** I understand the battery's role as power storage and delivery during an eclipse. I modeled it as a 7.4V voltage source in series with the main power bus, enabling it to be charged by the solar cell in the sun and to power all components (except the payload) during the eclipse. Since the software didn't have a specific **battery component**, I used two batteries in a "-++-" configuration to simulate a battery with charging and discharging behavior.
 
 ![Battery](src/media/Battery2)
+![WaveForm](figures/Battery_Waveform)
 
 * **TT\&C and ADCS:** As these loads are designed to operate in short bursts, I connected them in parallel with the battery and used a MOSFET controlled by a clock source. The TT\&C has a brief duty cycle for its pulses, while the ADCS is activated with a larger delay to simulate less frequent operation. They are shown as resistors of 20 ohms and 15 ohms respectively in the circuit.
 
