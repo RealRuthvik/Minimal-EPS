@@ -1,4 +1,4 @@
-# **Element-to-Function Mapping**
+# **Element to Function Mapping**
 
 ### **Solar Panels & MPPT**
 
