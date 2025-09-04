@@ -2,7 +2,7 @@
 
 ## **The Problem As I Understood It**
 
-I understood the problem as the need to create a mock satellite where I simulate its orbit. The simulation would have a 60 minute (60 seconds simulation time) period facing the sun, during which it generates solar power and charges the battery. This is followed by a 30 minute (30 seconds simulation time) eclipse period where the battery is responsible for powering the satellite. (Preview speed 30x)
+I understood the problem as the need to model a minimal Electrical Power Subsystem (EPS) for a CubeSat using CircuitJS1. The goal is to simulate the charge/discharge behavior over repeated sun and eclipse periods. The satellite is in the sun for 60 minutes (60 seconds simulation time) and in eclipse for 30 minutes (30 seconds simulation time). During the sun period, the system will receive approximately 6 W of solar power, which will charge the battery and power the loads. During the clipse period, the battery will be the sole power source for the satellite's loads. (Preview speed 30x)
 
 ![30x faster](src/CircuitV.gif)
 
