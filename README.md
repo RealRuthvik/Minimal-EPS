@@ -4,7 +4,7 @@
 
 I understood the problem as the need to model a minimal Electrical Power Subsystem (EPS) for a CubeSat using CircuitJS1. The goal is to simulate the charge/discharge behavior over repeated sun and eclipse periods. The satellite is in the sun for 60 minutes (60 seconds simulation time) and in eclipse for 30 minutes (30 seconds simulation time). During the sun period, the system will receive approximately 6 W of solar power, which will charge the battery and power the loads. During the clipse period, the battery will be the sole power source for the satellite's loads. (Preview speed 30x)
 
-![30x faster](src/CircuitV.gif)
+![30x faster](src/media/CircuitV.gif)
 
 ## **Approach and Assumptions**
 
@@ -12,23 +12,23 @@ My approach was to model each component of the Electrical Power Subsystem (EPS) 
 
 * **The Orbit**: I designed the orbit as a current source controlled by a clock at required intervals.
 
- 	![Orbit](src/Orbit)
+ 	![Orbit](src/media/Orbit)
 
 * **On Board Computer (OBC):** The OBC is a continuous load. I connected it in parallel with the battery to ensure it remains powered throughout the entire orbit. It is represented as a resistor of 55 ohms.
 
-![Circuit](src/OBC)
+![Circuit](src/media/OBC)
 
 * **Payload:** This is a sun-only load. To model this, I placed it in series with the solar power source. This configuration ensures that it only draws power when the solar panels are generating electricity, as specified in the problem statement. It is represented as a purple LED in the circuit.
 
-![Payload](src/Payload)
+![Payload](src/media/Payload)
 
 * **Battery:** I understand the battery's role as power storage and delivery during an eclipse. I modeled it as a 7.4V voltage source in series with the main power bus, enabling it to be charged by the solar cell in the sun and to power all components (except the payload) during the eclipse. Since the software didn't have a specific **battery component**, I used two batteries in a "-++-" configuration to simulate a battery with charging and discharging behavior.
 
-![Battery](src/Battery2)
+![Battery](src/media/Battery2)
 
 * **TT\&C and ADCS:** As these loads are designed to operate in short bursts, I connected them in parallel with the battery and used a MOSFET controlled by a clock source. The TT\&C has a brief duty cycle for its pulses, while the ADCS is activated with a larger delay to simulate less frequent operation. They are shown as resistors of 20 ohms and 15 ohms respectively in the circuit.
 
-![Loads](src/Loads)
+![Loads](src/media/Loads)
 
 ## **Tools and Resources**
 
