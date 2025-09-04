@@ -1,7 +1,5 @@
 # **Element-to-Function Mapping**
 
-![ESP](figures/EPS-high-level-block-diagram.png)
-
 ### **Solar Panels & MPPT**
 
 This is the section on the far left of the circuit labeled "Simulated Orbit". The timed 811mA current source represents the combined, ideal power output from the solar panels after being optimized by the Maximum Power Point Tracking (MPPT) controller.

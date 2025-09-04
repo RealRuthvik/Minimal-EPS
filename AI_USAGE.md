@@ -8,7 +8,7 @@ The following resources were helpful in guiding me in the right direction for bu
 
 ### **Prompts & Conversations**
 
-Below is a list of prompts used during the development process. The conversations provided guidance on specific technical challenges.
+Below is a list of prompts used during the development process. Prompts generated on terminal.
 
 * **Initial Circuit Questions:**  
   * "Where is the PWL source?"  
