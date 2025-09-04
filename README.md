@@ -25,6 +25,7 @@ My approach was to model each component of the Electrical Power Subsystem (EPS) 
 * **Battery:** I understand the battery's role as power storage and delivery during an eclipse. I modeled it as a 7.4V voltage source in series with the main power bus, enabling it to be charged by the solar cell in the sun and to power all components (except the payload) during the eclipse. Since the software didn't have a specific **battery component**, I used two batteries in a "-++-" configuration to simulate a battery with charging and discharging behavior.
 
 ![Battery](src/media/Battery2)
+![WaveForm](figures/Battery_Waveform.png)
 
 Plot: Invervals are 60 seconds (charging cycle, shown as yellow), 30 seconds (discharge cycle, shown as red) & Constant voltage of 7.4V (shown as green).
 
