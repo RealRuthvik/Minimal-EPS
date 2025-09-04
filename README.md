@@ -2,9 +2,9 @@
 
 ## **The Problem As I Understood It**
 
-I understood the problem as the need to create a mock satellite where I simulate its orbit. The simulation would have a 60-minute period facing the sun, during which it generates solar power and charges the battery. This is followed by a 30-minute eclipse period where the battery is responsible for powering the satellite.
+I understood the problem as the need to create a mock satellite where I simulate its orbit. The simulation would have a 60-minute period facing the sun, during which it generates solar power and charges the battery. This is followed by a 30-minute eclipse period where the battery is responsible for powering the satellite. (Preview speed 30X)
 
-![Circuit](src/CircuitV.gif)
+![30x faster](src/CircuitV.gif)
 
 ## **Approach and Assumptions**
 
