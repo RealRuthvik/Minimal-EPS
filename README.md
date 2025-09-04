@@ -26,6 +26,10 @@ My approach was to model each component of the Electrical Power Subsystem (EPS) 
 
 ![Battery](src/media/Battery2)
 
+Plot: Invervals are 60 seconds (charging cycle, shown as yellow), 30 seconds (discharge cycle, shown as red) & Constant voltage of 7.4V (shown as green).
+
+![WaveForm](figures/Battery_Waveform)
+
 * **TT\&C and ADCS:** As these loads are designed to operate in short bursts, I connected them in parallel with the battery and used a MOSFET controlled by a clock source. The TT\&C has a brief duty cycle for its pulses, while the ADCS is activated with a larger delay to simulate less frequent operation. They are shown as resistors of 20 ohms and 15 ohms respectively in the circuit.
 
 ![Loads](src/media/Loads)
