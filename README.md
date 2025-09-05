@@ -21,7 +21,7 @@ Use it here: https://tinyurl.com/242qwz8d
 My approach was to model each component of the Electrical Power Subsystem (EPS) individually, with all components drawing power from a central bus. For simulation simplicity, I assumed that 1 minute of orbit time is equivalent to 1 second of simulation time.
 
 * **The Orbit**: I designed the orbit as a current source controlled by a clock at required intervals. 
-For the updated circuit, I used the pwl(t - 90*floor(t/90), 0, 0.811, 60, 0.811, 60.000000001, 0) fucntion to deliver 811mA of current at required intervels for a total of 90 seconds and staying ON for only 60 seconds.
+For the updated circuit, I used the pwl(t - 90*floor(t/90), 0, 0.811, 60, 0.811, 60.000000001, 0) fucntion to deliver 811mA of current at required intervels for a total of 90 seconds and staying ON for only 60 seconds, Generating 6W of power.
 
 ![Orbit](src/media/Orbit)
 
@@ -42,7 +42,7 @@ Updated Orbit after the E-MAIL:
 ![Battery](src/media/Battery2)
 
 
-Plot: Invervals are 60 seconds (charging cycle, shown as yellow), 30 seconds (discharge cycle, shown as red) & Constant voltage of 7.4V (shown as green).
+Plot: Invervals are 60 seconds (charging cycle, shown as yellow), 30 seconds (discharge cycle, shown as red) & Constant voltage of 7.4V (shown as green) & roughly 6W of power.
 
 ![WaveForm](figures/Battery_Waveform(2).png)
 
