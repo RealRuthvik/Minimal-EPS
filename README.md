@@ -22,11 +22,11 @@ My approach was to model each component of the Electrical Power Subsystem (EPS) 
 
 * **The Orbit**: I designed the orbit as a current source controlled by a clock at required intervals.
 
- 	![Orbit](src/media/Orbit)
+![Orbit](src/media/Orbit)
 
-  Updated Orbit after the E-MAIL:
+Updated Orbit after the E-MAIL:
   
-  ![Orbit](src/media/Orbit_Update.png)
+![Orbit](src/media/Orbit_Update.png)
 
 * **On Board Computer (OBC):** The OBC is a continuous load. I connected it in parallel with the battery to ensure it remains powered throughout the entire orbit. It is represented as a resistor of 55 ohms.
 
@@ -43,7 +43,7 @@ My approach was to model each component of the Electrical Power Subsystem (EPS) 
 
 Plot: Invervals are 60 seconds (charging cycle, shown as yellow), 30 seconds (discharge cycle, shown as red) & Constant voltage of 7.4V (shown as green).
 
-![WaveForm](figures/Battery_Waveform.png)
+![WaveForm](figures/Battery_Waveform(2).png)
 
 Plot: Charging and discharging behaviour.
 
