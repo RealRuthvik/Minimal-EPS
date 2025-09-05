@@ -2,7 +2,17 @@
 
 ## **The Problem As I Understood It**
 
-I understood the problem as the need to model a minimal Electrical Power Subsystem (EPS) for a CubeSat using CircuitJS1. The goal is to simulate the charge/discharge behavior over repeated sun and eclipse periods. The satellite is in the sun for 60 minutes (60 seconds simulation time) and in eclipse for 30 minutes (30 seconds simulation time). During the sun period, the system will receive approximately 6 W of solar power, which will charge the battery and power the loads. During the clipse period, the battery will be the sole power source for the satellite's loads. (Preview speed 30x)
+I understood the problem as the need to model a minimal Electrical Power Subsystem (EPS) for a CubeSat using CircuitJS1. The goal is to simulate the charge/discharge behavior over repeated sun and eclipse periods. The satellite is in the sun for 60 minutes (60 seconds simulation time) and in eclipse for 30 minutes (30 seconds simulation time). During the sun period, the system will receive approximately 6 W of solar power, which will charge the battery and power the loads. During the clipse period, the battery will be the sole power source for the satellite's loads. (Preview speed 100x & 30x respectively.)
+
+UPDATED Circuit (After the E-mail regarding pwl function.)
+
+Use it here: https://tinyurl.com/2bvepyky
+
+![100x faster](src/media/CircuitV_Updated.gif)
+
+Circuit submitted on 5th September 2025 (Before the E-mail regarding pwl function.)
+
+Use it here: https://tinyurl.com/242qwz8d
 
 ![30x faster](src/media/CircuitV.gif)
 
@@ -13,6 +23,10 @@ My approach was to model each component of the Electrical Power Subsystem (EPS) 
 * **The Orbit**: I designed the orbit as a current source controlled by a clock at required intervals.
 
  	![Orbit](src/media/Orbit)
+
+  Updated Orbit after the E-MAIL:
+  
+  ![Orbit](src/media/Orbit_Update.png)
 
 * **On Board Computer (OBC):** The OBC is a continuous load. I connected it in parallel with the battery to ensure it remains powered throughout the entire orbit. It is represented as a resistor of 55 ohms.
 
