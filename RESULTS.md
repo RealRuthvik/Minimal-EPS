@@ -24,10 +24,14 @@ The simulation illustrates the basic charge and discharge cycle of the power sys
 
 In the 30 minute (30 second simulation time) eclipse period, the solar source is disabled, and the battery takes over automatically, now discharging to supply loads like the OBC and burst like intermittent loads like the TT\&C and ADCS. The battery current reverses direction (turns negative) to mark this switch. This sun charging and eclipse discharging cycle, as it manages the different timed loads, assures the EPS is functioning properly by providing a constant power supply for the satellite's subsystems.
 
-![WaveForm](figures/Battery_Waveform.png)
+![WaveForm](figures/Battery_Waveform(2).png)
 
 ![WaveForm](figures/SOC_Waveform.png)
 
 ![Clock](figures/Clock_Config.png)
+
+pwl(t - 90*floor(t/90), 0, 0.811, 60, 0.811, 60.000000001, 0)
+
+![WaveForm](figures/Orbit_Update.png)
 
 (Gemini was used to format this document.)

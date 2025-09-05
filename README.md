@@ -65,7 +65,7 @@ Plot: Charging and discharging behaviour.
 
 * **Issue: Lack of a Timed Source (PWL)**  
   * **Problem:** CircuitJS1 does not have a built-in Piecewise Linear (PWL) or a ready-made timed source, which was required to simulate the sun and eclipse periods.  
-  * **Workaround:** I used a Clock (CLK) with a specific waveform and a **MOSFET**. The clock is configured to produce a certain voltage to turn the MOSFET on and off.  
+  * **Workaround:** I used a Clock (CLK) with a specific waveform and a **MOSFET**. The clock is configured to produce a certain voltage to turn the MOSFET on and off. 
 * **Issue: Ideal Current Source Limitations**  
   * **Problem:** The software had a limitation where ideal current sources had issues when used with MOSFETs and transistors, preventing proper operation by bypassing them regardless of gate voltage condition.  
   * **Workaround:** I added a manual switch to the circuit and synchronized its timing with the clock. This manual switch allows for the proper control of the MOSFET, effectively working around the **software's limitation**.  
